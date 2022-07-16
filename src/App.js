@@ -1,4 +1,5 @@
-import React, { useMemo } from "react";
+import React, { useMemo, Context } from "react";
+import LanguageContext from "./contexts/language";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,18 +12,25 @@ import "./App.css";
 import ScrollToTop from "./ScrollToTop";
 /*******************************************************************/
 /************************ IMPORT COMPONENTS ***************************/
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/navbar/navbar.js";
 import HomePage from "./components/pages/homePage/homePage";
 /*******************************************************************/
 function App() {
+  const [userLanguage, setUserLanguage] = React.useState("el");
+  let providerLanguage = useMemo(
+    () => ({ userLanguage, setUserLanguage }),
+    [userLanguage, setUserLanguage]
+  );
   return (
-    <Router>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-      </Routes>
-    </Router>
+    <LanguageContext.Provider value={providerLanguage}>
+      <Router>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+        </Routes>
+      </Router>
+    </LanguageContext.Provider>
   );
 }
 
