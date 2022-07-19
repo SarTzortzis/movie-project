@@ -1,0 +1,103 @@
+
+.movie_carousel_section{
+    margin: 20px 15%;
+    width:70%;
+    display: flex;
+    border-radius: 10px;   
+    flex-direction: column;
+}
+.movie_carousel_header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width:80%;
+    justify-content: space-between;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, #00cc00, #4dffa6
+    ,#00b3b3 );
+    border-image-slice: 1;
+
+}
+
+.movie_carousel_h2{
+    padding:0 5px 0 0;
+    margin:0 0 0 5px;
+    display: flex;
+    flex-direction: row;
+}
+.switch_tab{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    font-size: 20px;
+}
+.switch_tab_selection{
+    cursor: pointer;
+    color:#333;
+    padding-bottom: 3px;
+}
+.trending_active_tab{
+    color: #00cc00 ;
+    font-weight: 600;
+}
+.switch_tab{
+    display: flex;
+    flex-direction: row;
+    margin-left:30px;
+}
+.movie_card{
+    display:flex;
+    flex-direction: column;
+    width:210px;
+    background-color: white;
+    height: 95%;
+    width: 70%;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+    margin:10px 10px 20px 10px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.movie_card:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.15);
+}
+.card_banner_img{
+    border-radius: 10px 10px 0 0;
+    height:85%;
+    width: 100%;
+}
+
+.movie_card_info{
+    padding:2px;
+    display: flex;
+    flex-direction: column;
+}
+.movie_card_info_title{
+    font-size: 14px;
+    font-weight: 550;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.movie_card_info_date{
+    color:#999;
+}
+.vote_percentage {
+    width:50px;
+    position: absolute;
+    top:0%;
+    left:0%;
+    font-size: 16px;
+}
+.fa-bookmark{
+    position:absolute;
+    top:2.1%;
+    right:30%;
+    color:#333;
+    cursor: pointer;
+    
+}
+.fa-bookmark:hover{
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}

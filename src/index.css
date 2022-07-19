@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.common_btn{
+  border:none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #333 ;
+}
+::-webkit-scrollbar-thumb {
+  background:
+  linear-gradient(0deg, #00cc00 0%, #00b3b3 100%);
+  border-radius: 5px;
+}

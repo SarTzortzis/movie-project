@@ -1,0 +1,146 @@
+.preview_container{
+    width:70%;
+    height:100%;
+    margin:20px 0 0 15%;
+    border-radius: 10px;
+    color:white;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.preview_image{
+    width:100%;
+    border-radius: 10px 0 0 10px;
+    height:100%;
+    box-shadow: 25px 0 10px 0 rgba(0, 0, 0, 0.9);
+}
+.preview_switch_tab{
+    margin-top:15px;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    font-size: 16px;
+}
+
+.preview_tab_selection{
+    width:20%;
+    text-align: center;
+    cursor: pointer;
+}
+.preview_tab_selection_active{
+   color: #00b3b3;
+   border-bottom: 1px solid #00b3b3;
+   padding-bottom: 5px;
+}
+.preview_info_section{
+    width:60%;
+    height:100%;
+    margin-left:30px;
+    padding:5px 10px;
+    display:flex;
+    flex-direction: column;
+}
+.preview_genres{
+    display:flex;
+    flex-direction: row;
+    width:60%;;
+    margin-top:15px;
+}
+.preview_genre_item{
+    padding:2px 6px 3px 6px;
+    background-color: #00b3b3;
+    color:white;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-left:10px;
+    cursor:pointer;
+    min-width: fit-content;
+}
+.preview_genre_item:hover{
+    transition: 0.3s ease;
+    background-color: #00cc00 ;
+}
+.preview_info_desc{
+    text-align: justify;
+    margin:15px 0 0 10px;
+}
+.preview_header{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.preview_score{
+    width:60px;
+}
+.preview_release{
+    
+    margin-left:10px;
+    font-weight: normal;
+    color:#ccc;
+}
+.preview_runtime{
+    margin-top:10px;
+    color:#ccc;
+    font-weight: 500;
+}
+.preview_clock_icon{
+    color:#00cc00;
+    margin:0 5px 0 10px;
+}
+.preview_homepage_navlink{
+    text-decoration: none;
+    color:#00cc00;
+}
+.preview_more_info{
+    margin-top:10px;
+    display:flex;
+    flex-direction: row;
+    margin-left: 10px;
+    width:100%;
+}
+.preview_label{
+    color:#00b3b3;
+    width:30%;
+    margin-right:10px;
+    font-weight: 500;
+}
+.preview_production_companies{
+    margin-right:10px;
+}
+.PC_banner{
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
+@media only screen and (max-width: 1000px) {
+    .preview_container{
+        width:80%;
+        margin-left:10%;
+    }
+    .preview_info_section{
+        width:90%;
+        margin-left:5px;
+        padding:5px 0;
+    }
+    .preview_image_section{
+        display:none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .preview_container{
+        width:fit-content;
+        height:fit-content;
+        margin:20px 5px 0 5px;
+    }
+    .preview_info_section{
+        width:90%;
+        margin-left:5px;
+        padding:5px 0;
+    }
+    .preview_image_section{
+        display:none;
+    }
+}

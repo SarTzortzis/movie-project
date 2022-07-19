@@ -1,0 +1,109 @@
+.login_section{
+    width:80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fefefe;
+    min-height:90%;
+    margin:auto auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.login_carousel{
+    min-width: 500px;
+
+    border-radius: 10px 0 0 10px;
+}
+.login_img{
+    min-width: 500px;
+    min-height: 730px;
+    border-radius: 10px 0 0 10px;
+
+}
+.loginForm{
+    border-radius:0 10px 10px 0;
+    width:100%;
+}
+.login_h1{
+    padding:0;
+    margin:20px 0 0 45px;
+    font-size: 64px;
+    width: fit-content;
+    background: -webkit-linear-gradient(240deg,rgba(0, 204, 0, 1) 
+    , rgba(0, 179, 179, 1) 
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.login_h3{
+    padding:0;
+    margin:5% auto 1% auto;
+    color:#aaa;
+    width: fit-content;
+}
+.login_label{
+    width:100%;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:40px;
+    color: rgba(0, 179, 179, 1);
+
+}
+.login_input{
+    border:1px solid #eee;
+    outline: none;
+    height:64px;
+    font-size: 28px;
+    color:#333;
+    width:80%;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-top:10px;
+}
+
+.login_submit{
+    cursor: pointer;
+    width:50%;
+    height:64px;
+    font-size: 32px;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    color: rgba(0, 179, 179, 1) ;
+    margin: 10% auto 0 auto;
+    display: block;
+    transition: 0.2s ease;
+}
+.login_submit:hover{
+    transition: 0.5s ease;
+    transform: scale(1.01);
+    color: white;
+    background-color: rgba(0, 179, 179, 1) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login_icons{
+    width:30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.fa-imdb{
+    color:#f3ce13 
+}
+.fa-facebook{
+    color:#4267B2
+}
+.fa-google{
+    color:#db3236;
+}
+.login_icon_item{
+    cursor: pointer;
+}
+.login_icon_item:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
